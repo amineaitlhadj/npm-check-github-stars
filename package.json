@@ -10,12 +10,11 @@
     "stars"
   ],
   "homepage": "https://github.com/OlivierCoilland/npm-check-github-stars#readme",
-  "bugs": "https://github.com/OlivierCoilland/npm-check-github-stars/issues",
-  "license": "MIT",
-  "author": {
-    "name": "Olivier Coilland",
-    "url": "https://github.com/OlivierCoilland"
+  "bugs": {
+    "url": "https://github.com/OlivierCoilland/npm-check-github-stars/issues"
   },
+  "license": "MIT",
+  "author": "Olivier Coilland (https://github.com/OlivierCoilland)",
   "bin": {
     "npm-check-github-stars": "./bin/npm-check-github-stars",
     "ncgs": "./bin/ncgs"
@@ -28,7 +27,7 @@
   "scripts": {
     "lint": "eslint bin/* lib test",
     "lint:fix": "eslint --fix bin/* lib test",
-    "test": "npm run lint"
+    "test": "mocha"
   },
   "dependencies": {
     "colors": "1.2.1",
@@ -38,5 +37,9 @@
   "devDependencies": {
     "eslint": "4.19.0"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
